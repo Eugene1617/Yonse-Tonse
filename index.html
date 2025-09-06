@@ -3,28 +3,32 @@
 <head>
     <title>YONSE TONSE</title>
     <style>
-        button{
+       button{
             height:100px;
-            width:80px;
-            position:relative;
+            width: 80px;
+            display: inline;
             border: 3px cyan solid;
             border-radius: 30px;
-            background: blue;
+            background: rgb(25, 25, 65);
         }
         button:hover{
             color: aqua;
             transform: translate(-5px,-5px) rotate(12deg);
         }
-body{
-            background:grey;}
+        body{
+            background:radial-gradient(black,grey);
+        }
         img{
-            position:static;
+            display: inline;
+            position:relative;
             border-radius: 12%;
+            left:38%;
             border: 5px solid;
-            height: 400px;
-            width: 300px;
+            height: 500px;
+           width: 400px;
         }
         p{
+            position: relative;           
             background: black;
             height: fit-content;
             color: white;
@@ -34,26 +38,40 @@ body{
         }
         div{
             margin: 2px;
-           display: inline-flex;
+           display:block;
            position: absolute;
            top: 10;
         }
          img:hover{
-            box-shadow: 2px 3px 5px 8px gold;}
+            box-shadow: 2px 3px 5px 8px gold;
+        }
         h1{
+            width: fit-content;
+            position: relative;
+            left:40%;
             color: aqua;
             animation: h 8s infinite ease-in-out;
+            border-radius: 10%;
+         
         }
+        #im1{
+ position: relative;
+   left: 60%;
+    top: 50%;
+        }
+          #im2{
+ position: relative;
+     left:40%;
+    top: 50%;
+}
         @keyframes h{
-            20%{
-                transform:translate(144px);
-            }
             30%{
                 color: cyan;
-                transform: scale(1.2);
+                transform: scale(1.08);
+                   border:6px double greenyellow;
             }
             100%{color: gold;
-               transform: rotate(12deg);
+               background: linear-gradient(red,blue,green);
             }
         }
         @media screen and (max-width:800px){
@@ -74,8 +92,8 @@ body{
 <body>
 <h1>Yonse Tonse presentation pics</h1>
 <button id="im1" onclick="k()">NEXT</button>
-<button id="im2" onclick="k1()">PREVIEW</button>
-<div><img  id="img" src="presse\\20250807_1511_Python Programming Lesson_simple_compose_01k22ag0deff5vm8ac18apnd83.png">
+<button  id="im2" onclick="k1()">PREVIEW</button>
+<div><img  id="img" src="presse\20250807_1511_Python Programming Lesson_simple_compose_01k22ag0deff5vm8ac18apnd83.png">
  <p>Hey guys, how’s everyone doing? 😅 I feel like we’ve all been 
   swallowed by assignments, exams, and endless lectures, but I hope you’re still alive and not just existing 
   like a while loop that forgot its condition. Honestly, sometimes school feels like debugging code—you think you’re almost 
@@ -87,11 +105,7 @@ body{
    every day. 💡 Keep smiling, keep hustling, and don’t forget to laugh at the chaos—we’re all in 
    the same dataset called “surviving school.” 😂 How are you guys holding up?</p>
 </div>
-</body>
 <script>
- 
-
-
 alert('Welcome data Scientist');
 let n=[
 'presse\\WhatsApp Image 2025-08-01 at 08.40.33_863e3304.jpg',
@@ -181,20 +195,13 @@ function k(){
 alert('no more pictures data scientist press preview for more');
   }
 }
-
-function k1(){if (pp>=0){
+function k1(){
+    if (pp>=0){
  let m=document.getElementById('img').src=n[pp];
-
   pp--; }
   else{
     alert('no more pictures data scientist press next for more');
 }}
 </script>
+</body>
 </html>
-
-
-
-
-
-
-
