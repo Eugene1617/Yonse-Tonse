@@ -1,0 +1,154 @@
+div{
+    box-shadow: 2px 2px 8px black;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color:black;
+    width:fit-content;
+    max-width:100%;
+    margin: auto;
+    font-family: courier,Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 8px;
+    border: 2px solid wheat;
+    text-align: justify;
+    cursor:move;
+}
+    h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Arial Black', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: we 3s infinite;
+}
+.uu{
+    text-decoration: overline;
+    font-size:18px;
+    margin: 20px;
+     display: block;
+    text-align: left;
+    color: gold;
+ }   
+ p{
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: courier;
+    font: 1em sans-serif;
+    }
+    button{
+        right: 20px;
+        position: relative;
+        padding: 10px 20px;
+    font-size: 18px;
+        display: block;
+    border-radius: 8px;
+    border: 2px solid white;
+    cursor: pointer;
+    background:blue;}
+    button:hover{
+    background: darkblue;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    }
+    button:active{
+    background: navy;
+    color: lightblue;
+    text-shadow: 2px 2px 4px black;
+    }
+    img{
+    max-width: 100%;
+    height: auto;
+    max-height: 550px;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 8px;
+    border: 2px solid wheat;
+    }
+   .sp{
+color: gold;
+font-family:Courier;
+font-size: 30px;
+animation: we1 infinite 4s;
+background: #000;
+box-shadow: 1px 1px 2px black;
+text-shadow: 2px 2px 3px black;
+
+    }
+@keyframes we {
+    70%{ color: blue; text-shadow: 2px 2px 8px gold; }
+    0%, 100% { color: white; text-shadow: 2px 2px 4px black; }
+    50% { color: yellow; text-shadow: 2px 2px 8px orange; }}
+    body{
+    background: linear-gradient(to right, blue 10%, #fcb69f 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    a:hover{
+    color: red;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
+    }
+    a{
+        color:wheat;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    }
+    @keyframes we1{
+        10%,20%{
+            background: rgb(20, 11, 11);
+            
+        }
+        30%,40%{
+background: red;
+
+        }
+        50%,60%{
+
+            background: green;
+        }
+        70%,80%,90%{
+
+            background: linear-gradient(black,red,green);
+        }
+        100%{
+
+            border-radius: 8px;
+        }
+    }
+    @media (max-width: 600px) {
+    div {
+        font-size: 16px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .uu {
+        font-size: 16px;
+        margin: 15px;
+    }
+}
+a::after{
+    content: ' click here';
+    font-size: 20px;
+    margin-left: 5px;
+
+}
